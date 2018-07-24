@@ -1,0 +1,6 @@
+[ 2018-5-29 06:05:09 ] [ log ] mongodb load success...
+[ 2018-5-29 06:06:36 ] [ log ] the server is start at 127.0.0.1:3000
+[ 2018-5-29 06:06:36 ] [ log ] mongodb load success...
+[ 2018-5-29 06:29:12 ] [ log ] the server is start at 127.0.0.1:3000
+[ 2018-5-29 06:29:13 ] [ error ] MongoError: failed to connect to server [yapi_mongodb:27017] on first connect, mongodb Authentication failed
+[ 2018-5-29 06:29:13 ] [ error ] MongoError: failed to connect to server [yapi_mongodb:27017] on first connectmongodb connect error

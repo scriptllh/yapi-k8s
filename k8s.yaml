@@ -1,0 +1,41 @@
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yapi
+  labels:
+    app: yapi
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      nodePort: 30001
+  selector:
+    run: yapi
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: yapi
+  name: yapi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: yapi
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: yapi
+    spec:
+      containers:
+      - image: images id:latest
+        imagePullPolicy: Always
+        name: yapi
+        resources: {}
+status: {}
